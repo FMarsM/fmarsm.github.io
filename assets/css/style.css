@@ -141,7 +141,7 @@ ul.menu li a:hover {
 	height: 15%;
 	padding: 28px 0 5px 0;
 	text-align: center;
-    background-image: url('assets/img/footer.jpg') ;
+    background-image: url('/assets/img/footer.jpg') ;
     background-size: cover;
 	background-color: black;
 	margin-left: 0px;
