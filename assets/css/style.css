@@ -123,6 +123,7 @@ ul.menu li a:hover {
 }
 .container {
     margin-left: 25%;
+    clear: both;
 }
 
 
