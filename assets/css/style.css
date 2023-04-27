@@ -53,7 +53,7 @@ ul li {
 	font-size: 0.8em;
 	margin-left: 0px;
 	margin-right: 0px;
-	min-width: 1200px;
+	width:100%;
     overflow: hidden;
 }
 .main, .logo, .menubar, .site_content, .footer {
@@ -86,7 +86,7 @@ ul li {
 ul.menu {
 	float: left;
     overflow: hidden;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 ul.menu li{
 	float: left;
@@ -146,7 +146,6 @@ ul.menu li a:hover {
 	background-color: black;
 	margin-left: 0px;
 	margin-right: 0px;
-	min-width: 1200px;
 }
 .footer a {
 	color: #e1e4c7;
@@ -396,6 +395,11 @@ ul.menu li a:hover {
     }
       #slider_bl .slider-wrapper
       {border-radius:0}
+      ul menu {
+        margin-left: 0;
+        padding-left: 0;
+        float:none;
+    }
   }
   @media only screen and (max-width:450px)
   {
@@ -403,9 +407,20 @@ ul.menu li a:hover {
       {border-radius:0}
       #slider_bl .slider-wrapper .info
       {opacity:0}
+      .site_content {
+        width: 100%;
+    }
+    ul menu {
+        margin-left: 0;
+        padding-left: 0;
+        float:none;
+    }
   }
       @media only screen and (min-width:850px)
       {
           #slider_bl body
           {padding:0 80px}
       }
+      .site_content {
+        width: 100%;
+    }
