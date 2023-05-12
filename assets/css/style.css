@@ -176,7 +176,9 @@ ul.menu li a:hover {
 }
 
 
-
+.ad_text {
+    display: inline;
+}
 
 
 
