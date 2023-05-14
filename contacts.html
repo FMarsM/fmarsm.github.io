@@ -20,21 +20,39 @@
 					<h1><a href="index.html">Коттеджи "Чайка" Казань</a></h1>
 					<h2>Проведите праздник с комфортом и уютом</h2>
 				</div>
-                <div class="language">
-                    <button  onclick="document.location='index-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
-                    <button  onclick="document.location='index.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
-          
-                  </div>
+        <div class="language">
+          <button  onclick="document.location='index-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
+          <button  onclick="document.location='index.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
+
+        </div>
+
+        <button id="navigation"></button>
+
+
 			</div>
-			<div class=menubar>
+			<div class="menubar" id="menubar">
 				<ul class="menu">
-					<li><a href="index.html">Главная</a></li>
+					<li class="selected"><a href="index.html">Главная</a></li>
 					<li><a href="chaika1.html">Чайка-1</a></li>
-					<li ><a href="chaika2.html">Чайка-2</a></li>
+					<li><a href="chaika2.html">Чайка-2</a></li>
 					<li><a href="chaika3.html">Чайка-3</a></li>
-                    <li class="selected"><a href="contacts.html">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
+      <script>
+        let navigation = document.querySelector('#navigation');
+        document.addEventListener("click", function(e) {
+  let m = document.querySelector('.menubar');
+  if (e.target.id != 'navigation' && e.target.id != 'menubar') {
+    m.style.display = 'none';
+  } else if (e.target.id == 'navigation') {
+    m.style.display = (m.style.display != 'flex') ? 'flex' : 'none';
+  }
+  if (document.documentElement.clientWidth > 1280) {
+          m.style.display = 'block';
+        }
+});
+      </script>
 
         </div>
 <div class="site_content">

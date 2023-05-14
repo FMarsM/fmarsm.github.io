@@ -41,7 +41,7 @@ a, a:hover {
 	text-decoration: underline;
 	color: whitesmoke;
     font-family:'Shentox-Regular';
-    font-size: 350%;
+    font-size: 300%;
 
 }
 
@@ -74,10 +74,11 @@ ul li {
 .logo h1{
     
 	font :normal 400% , arial, sans-serif;
-	margin: 0 0 0 9px;
+	margin: 0 9px 0 9px;
 }
 .logo h2{
 	margin-left: 20px;
+    margin-right: 9px;
 }
 .logo_text h1 a, .logo_text h1 a:hover {
     text-decoration: none;
@@ -108,7 +109,7 @@ ul.menu li a {
     min-width: fit-content;
     min-height: fit-content;
     font-size: 1em;
-	font: normal 400% sans-serif ;
+	font: normal 400% 'Shentox-Regular' ;
 	display: block;
     padding-right: 5%;
 	color: #d1d1d1;
@@ -207,7 +208,7 @@ ul.menu li a:hover {
     background-repeat: no-repeat;
     border-radius: 50px;
     border: none;
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     height: 100px;
     width: 100px;
@@ -220,16 +221,20 @@ ul.menu li a:hover {
     display: block;
 }
 table {
-    width:30%;
+    width:100%;
     border: #000 1px solid;
     height: 30%;
 }
 th {
+    font: normal 130% 'century gothic', arial;
     font-weight: bold;
+    text-align: center;
     color: #561818;
     border: #000 1px solid;
 }
 td {
+    font: normal 130% 'century gothic', arial;
+    text-align: center;
     border: #000 1px solid;
     color: #561818;
 }
@@ -495,7 +500,7 @@ td {
   {
       margin-left:-400%
   }
-  @media only screen and (max-width:1280px) and (min-width:450px)
+  @media only screen and (max-width:1280px)
   {
     .menubar {
         width: 100%;
@@ -552,36 +557,3 @@ td {
     }
 
   }
-  @media only screen and (max-width:450px)
-  {
-      #slider_bl .slider-wrapper
-      {border-radius:0}
-      #slider_bl .slider-wrapper .info
-      {opacity:0}
-      .site_content {
-        width: 100%;
-    }
-    ul menu {
-        margin-left: 0;
-        padding-left: 0;
-        float:none;
-    }
-    ul menu li {
-        text-align: center;
-    }
-    .container {
-        margin: auto;
-    }
-    ul.menu {
-        text-align: center;
-        float: none;
-    }
-  }
-      @media only screen and (min-width:850px)
-      {
-          #slider_bl body
-          {padding:0 80px}
-      }
-      .site_content {
-        width: 100%;
-    }

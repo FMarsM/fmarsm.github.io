@@ -14,29 +14,45 @@
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <div class="logo">
-				<div class="logo_text">
-					<h1><a href="index-eng.html">Cottages "Chaika" Kazan</a></h1>
-					<h2>Spend the holiday with comfort and coziness</h2>
-				</div>
-                <div class="language">
-                    <button   onclick="document.location='index-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
-                    <button  onclick="document.location='index.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
-                </div>
+      <div class="header">
+        <div class="logo">
+    <div class="logo_text">
+      <h1><a href="index-eng.html">Cottages "Chaika" Kazan</a></h1>
+      <h2>Spend the holiday with comfort and coziness</h2>
+    </div>
+    <div class="language">
+      <button  onclick="document.location='index-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
+      <button  onclick="document.location='index.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
 
-			</div>
-			<div class=menubar>
-				<ul class="menu">
-					<li class="selected"><a href="index-eng.html">Main</a></li>
-					<li><a href="chaika1-eng.html">Chaika-1</a></li>
-					<li><a href="chaika2-eng.html">Chaika-2</a></li>
-					<li><a href="chaika3-eng.html">Chaika-3</a></li>
-                    <li><a href="contacts-eng.html">Contacts</a></li>
-				</ul>
-			</div>
+    </div>
 
-        </div>
+    <button id="navigation"></button>
+
+
+  </div>
+  <div class=menubar>
+    <ul class="menu">
+      <li class="selected"><a href="index-eng.html">Main</a></li>
+      <li><a href="chaika1-eng.html">Chaika-1</a></li>
+      <li><a href="chaika2-eng.html">Chaika-2</a></li>
+      <li><a href="chaika3-eng.html">Chaika-3</a></li>
+                <li><a href="contacts-eng.html">Contacts</a></li>
+    </ul>
+  </div>
+  <script>
+    let navigation = document.querySelector('#navigation');
+    document.addEventListener("click", function(e) {
+let m = document.querySelector('.menubar');
+if (e.target.id != 'navigation' && e.target.id != 'menubar') {
+m.style.display = 'none';
+} else if (e.target.id == 'navigation') {
+m.style.display = (m.style.display != 'flex') ? 'flex' : 'none';
+}
+if (document.documentElement.clientWidth > 1280) {
+      m.style.display = 'block';
+    }
+});
+  </script>
         <div class="site_content">
             
 
