@@ -58,23 +58,36 @@
 <div class="site_content">
     <h2 id="h_contact">Оставьте свои данные и мы вам перезвоним!</h2>
     <div class="form_wrapper">
-        <form id="registration">
+        <form id="registration" action="#" name="submit-to-google-sheet">
             <label>ФИО</label> <br>
-            <input id="text" name="Name"><br>
+            <input type="text" id="text" name="Name" required><br>
             <label>Номер телефона</label><br>
-            <input id="text" name="Phone_number"><br>
+            <input type="text" id="text" name="Phone_number" required><br>
             <label>Даты проживания</label><br>
-            <input id="text" name="Dates"><br>
+            <input type="text" id="text" name="Dates" required><br>
             <label>Количество заселяющихся</label><br>
-            <input id="text" name="Number_of_clients"><br><br>
+            <input type="text" id="text" name="Number_of_clients" required><br><br>
             <label>Дополнительная информация</label><br>
-            <textarea id="text" name="Commentaries" placeholder="Комментарий"></textarea><br>
-            <button onclick="SubForm()" class="form_button">Отправить</button>
+            <textarea type="text" id="text" name="Commentaries" placeholder="Комментарий"></textarea><br>
+            <button type="submit" class="form_button">Отправить</button>
+            <span id="success"></span>
         </form>
 
     </div>
 
 </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw3THh1AChjIrimh8HjZsrf6aMr1avl_7hVCiONeFhGXmN8B9uHffW1Ydo5yfv0-i_M/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const success = document.getElementById('success');
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Success"))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 
         <div class="footer">
