@@ -58,17 +58,17 @@
 <div class="site_content">
     <h2 id="h_contact">Оставьте свои данные и мы вам перезвоним!</h2>
     <div class="form_wrapper">
-        <form id="registration" action="#" name="submit-to-google-sheet">
+        <form id="registration" action="POST" name="submit-to-google-sheet">
             <label>ФИО</label> <br>
-            <input type="text" id="text" name="Name" required><br>
+            <input type="text" id="text" name="Name" required autocomplete="off"><br>
             <label>Номер телефона</label><br>
-            <input type="text" id="text" name="Phone_number" required><br>
+            <input type="text" id="text" name="Phone_number" required autocomplete="off"><br>
             <label>Даты проживания</label><br>
-            <input type="text" id="text" name="Dates" required><br>
+            <input type="text" id="text" name="Dates" required autocomplete="off"><br>
             <label>Количество заселяющихся</label><br>
-            <input type="text" id="text" name="Number_of_clients" required><br><br>
+            <input type="text" id="text" name="Number_of_clients" required autocomplete="off"><br><br>
             <label>Дополнительная информация</label><br>
-            <textarea type="text" id="text" name="Commentaries" placeholder="Комментарий"></textarea><br>
+            <textarea type="text" id="text" name="Commentaries" placeholder="Комментарий" autocomplete="off"></textarea><br>
             <button type="submit" class="form_button">Отправить</button>
             <span id="success"></span>
         </form>
