@@ -32,11 +32,11 @@
 			</div>
 			<div class="menubar" id="menubar">
 				<ul class="menu">
-					<li class="selected"><a href="index.html">Главная</a></li>
+					<li ><a href="index.html">Главная</a></li>
 					<li><a href="chaika1.html">Чайка-1</a></li>
 					<li><a href="chaika2.html">Чайка-2</a></li>
 					<li><a href="chaika3.html">Чайка-3</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="selected"><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
       <script>
@@ -84,7 +84,14 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert("Success"))
+      .then(response => {
+        success.innerHTML = "Спасибо, ваша заявка зарегистрирована!"
+        setTimeout(function()
+        {
+          success.innerHTML = "";
+        }, 3000) 
+        }
+        )
       .catch(error => console.error('Error!', error.message))
   })
 </script>

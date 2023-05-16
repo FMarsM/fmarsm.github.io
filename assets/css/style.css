@@ -22,9 +22,10 @@ body{
 }
 p{
     font: normal 150% 'century gothic', arial;
+    font-size: 3vh;
 	padding: 0 0 20px 0;
-	line-height: 1.7em;
     min-width: 15%;
+    line-height: 1.5em;
 }
 
 
@@ -47,11 +48,7 @@ a, a:hover {
 
 }
 
-ul li {
 
-	line-height: 1em;
-    
-}
 
 .header 
 {
@@ -75,14 +72,16 @@ ul li {
 }
 .logo h1{
 	font :normal 400% , arial, sans-serif;
-	margin: 0 9px 0 9px;
+	margin: 0 20px 0 9px;
 }
 .logo h2{
 	margin-left: 20px;
-    margin-right: 9px;
+    margin-right: 20px;
 }
 .logo_text h1 a, .logo_text h1 a:hover {
+    margin-right: 10px;
     text-decoration: none;
+    font-size: 5vh;
 }
 .logo_text h2{
 	font-size: 150%;
@@ -167,6 +166,7 @@ ul.menu li a:hover {
 
 }
 #text {
+    border-radius: 5px;
     width: 100%;
     display: block;
     opacity: 0.5;
@@ -221,10 +221,18 @@ ul.menu li a:hover {
 .description_text p {
     display: block;
 }
+span {
+    display: block;
+    text-align: center;
+    font-family: 'Shentox-regular';
+    font-size: 130%;
+    color:rgb(2, 192, 2);
+}
 table {
     width:100%;
     border: #000 1px solid;
     height: 30%;
+    padding-bottom: 3%;
 }
 th {
     font: normal 130% 'century gothic', arial;
@@ -232,6 +240,7 @@ th {
     text-align: center;
     color: #561818;
     border: #000 1px solid;
+    width:50%;
 }
 td {
     font: normal 130% 'century gothic', arial;
@@ -243,8 +252,22 @@ td {
 #map_text {
     min-width: 500px;
 }
-
-
+ul.dop_spisok {
+    height:500px;
+    column-count: 2;
+}
+ul.dop_spisok li {
+    margin:1vh;
+    width:50%;
+    min-width: fit-content;
+    min-height: fit-content;
+    font-size: 1em;
+	display: block;
+	text-decoration: none;
+}
+ul.dop_spisok li p {
+    font-size: 2vh;
+}
 
 
 
