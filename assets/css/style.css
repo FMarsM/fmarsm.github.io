@@ -1,12 +1,15 @@
 @font-face
 {
-	font-family: 'Nord-Star-Deco';
-	src: local('Nord-Star-Deco'),
-	url('../fonts/Nord-Star-Deco.ttf');
+
     font-family: 'Shentox-Regular';
     src: local('Shentox-Regular'),
     url('../fonts/Shentox-Regular.ttf');
 
+}
+@font-face {
+	font-family: 'Nord-Star-Deco';
+	src: local('Nord-Star-Deco'),
+	url('../fonts/Nord-Star-Deco.ttf');
 }
 *{
 	margin: 0;
@@ -34,7 +37,7 @@ p{
 h1, h2{
     font-family: 'Nord-Star-Deco';
 	font: 150%;
-	margin: 0 0 15px 0;
+	margin: 20px 0 20px 0;
 	padding: 15px 0 5px 0;
 	color: #000;
 }
@@ -84,11 +87,13 @@ a, a:hover {
     margin-right: 10px;
     text-decoration: none;
     font-size: 5vh;
+    line-height: 1em;
 }
 .logo_text h2{
 	font-size: 150%;
 	padding: 4px 0 0 0;
 	color: #999;
+    line-height: 1.5em;
 }
 .menubar {
     height: auto;
@@ -203,6 +208,7 @@ ul.menu li a:hover {
     font-family: 'Shentox-Regular';
     margin-top: 5%;
     color: #561818;
+    line-height: 1.5em;
 }
 #navigation {
     float:right;
@@ -251,6 +257,7 @@ td {
 
 #map_text {
     min-width: 500px;
+    line-height: 1.5em;
 }
 ul.dop_spisok {
     height:500px;
@@ -412,8 +419,8 @@ ul.dop_spisok li p {
       color:#533826;
       margin:0 0 5px;
       font-weight:400;
-      font-size:3em;
-      font-style:"Nord-Star-Deco";
+      font-size:2em;
+      font-family:'Shentox-Regular';
   }
   #slider_bl .info.top-left
   {
