@@ -21,8 +21,8 @@
 					<h2>Проведите праздник с комфортом и уютом</h2>
 				</div>
         <div class="language">
-          <button  onclick="document.location='index-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
-          <button  onclick="document.location='index.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
+          <button  onclick="document.location='contacts-eng.html'"><img src="assets\img\eng.png" width="30px" height="20px"></button>
+          <button  onclick="document.location='contacts.html'"><img src="assets\img\rus.png" width="30px" height="20px"></button>
 
         </div>
 
@@ -62,13 +62,13 @@
             <label>ФИО</label> <br>
             <input type="text" id="text" name="Name" required autocomplete="off"><br>
             <label>Номер телефона</label><br>
-            <input type="text" id="text" name="Phone_number" required autocomplete="off"><br>
+            <input type="tel" id="text" name="Phone_number" required autocomplete="off"><br>
             <label>Дата заезда</label><br>
             <input type="date" id="text" name="Date1" required autocomplete="off"><br>
             <label>Дата отъезда</label><br>
             <input type="date" id="text" name="Date2" required autocomplete="off"><br>
             <label>Количество заселяющихся</label><br>
-            <input type="text" id="text" name="Number_of_clients" required autocomplete="off"><br><br>
+            <input type="text" id="text" name="Number_of_clients" required autocomplete="off" onchange="handleChange(this)"><br><br>
             <label>Выбранный дом</label><br>
             <select name="House" id="text">
               <option value="1">Чайка-1</option>
@@ -84,7 +84,12 @@
     </div>
 
 </div>
-
+<script>
+  function handleChange(input) {
+    if (input.value < 0) input.value = 0;
+    if (input.value > 30) input.value = 30;
+  }
+</script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw3THh1AChjIrimh8HjZsrf6aMr1avl_7hVCiONeFhGXmN8B9uHffW1Ydo5yfv0-i_M/exec'
   const form = document.forms['submit-to-google-sheet']
