@@ -219,6 +219,7 @@ ul.menu li a:hover {
 }
 .description_text {
     display: block;
+    margin: 0 10px 0 10px;
 }
 #success {
     display: block;
@@ -741,6 +742,7 @@ ul.dop_spisok li p {
     .description_text {
         margin:auto;
         vertical-align: top;
+        margin: 0 10px 0 10px;
     }
     .container {
         margin: auto;
